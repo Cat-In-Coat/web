@@ -1,5 +1,6 @@
 def app(env, start):
-	data = [i +'/n' for i in env['QUERY_STRING'].split('&')]
+	data = [i +'\n' for i in env['QUERY_STRING'].split('&')]
+	print(env['QUERY_STRING'])
 	print("".join(data))
 	for i in range(len(data)):
 		data[i] = bytes(data[i], 'ascii')
