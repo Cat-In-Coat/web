@@ -1,5 +1,10 @@
+sudo apt-get update
+sudo apt-get install python3
+sudo pip3 install --upgrade pip
+sudo pip3 install --upgrade django
+sudo pip3 install -- upgrade gunicorn
 sudo rm -rf /etc/nginx/sites-enabled/default
 sudo ln -sf /home/box/web/etc/nginx.conf   /etc/nginx/sites-enabled/defult
 sudo /etc/init.d/nginx restart
-cd /home/box/web
-gunicorn -b 0.0.0.0:8080 hello:app
+cd /home/box/web/ask/ask
+gunicorn -b 0.0.0.0:8080 wsgi:application

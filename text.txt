@@ -1,1 +1,0 @@
-Hello, World! Hello, Python! Hello, Django!
