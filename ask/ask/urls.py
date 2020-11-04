@@ -26,4 +26,5 @@ urlpatterns = [
     path('ask/', views.test),
     path('popular/', views.test),
     path('new/', views.test),
+    path('', views.test)
 ]
