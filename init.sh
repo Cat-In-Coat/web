@@ -14,5 +14,4 @@ sudo rm -rf /etc/nginx/sites-enabled/default
 sudo ln -sf /home/box/web/etc/nginx.conf   /etc/nginx/sites-enabled/defult
 sudo /etc/init.d/nginx restart
 cd /home/box/web/ask/ask
-sudo gunicorn -c /home/box/web/etc/gunicorn.conf hello:wsgi_application
-sudo gunicorn -c /home/box/web/etc/gunicorn-django.conf wsgi:application
+gunicorn -b 0.0.0.0:8080 wsgi:application
