@@ -1,7 +1,7 @@
 sudo apt-get update
-sudo apt-get install -f python3.8
+sudo apt-get install -f python3.5
 sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-sudo python3.8 get-pip.py
+sudo python3.5 get-pip.py
 sudo pip install django
 sudo pip install gunicorn
 sudo rm /etc/nginx/sites-enabled/default
