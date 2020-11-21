@@ -10,4 +10,4 @@ sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/defult
 sudo /etc/init.d/nginx restart
 sudo ln -sf /home/box/web/etc/gunicorn-django.conf /etc/gunicorn.d/test-django
 cd /home/box/web/ask
-gunicorn ask.wsgi
+gunicorn --config=/home/box/web/etc/gunicorn-django.conf ask.wsgi
