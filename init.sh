@@ -7,6 +7,7 @@ sudo pip3 install gunicorn
 sudo pip3 install pysqlite3
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/defult
+sudo chmod -R a+rwx /home/box/web
 sudo /etc/init.d/nginx restart
 sudo ln -sf /home/box/web/etc/gunicorn-django.conf /etc/gunicorn.d/test-django
 cd /home/box/web/ask
