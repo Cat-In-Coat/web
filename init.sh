@@ -1,7 +1,7 @@
 sudo apt-get update
 sudo apt-get install -f python3.5
 sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-sudo python3.5 get-pip.py
+sudo python3.8.3 get-pip.py
 sudo pip3 install django
 sudo pip3 install gunicorn
 sudo pip3 install pysqlite3
